@@ -1,0 +1,14 @@
+services:
+  app:
+    image: discord-bot
+    build: 
+      context: .
+    environment:
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - TOKEN=YOUR_TOKEN
+    depends_on:
+      - redis
+  
+  redis:
+    image: redis
