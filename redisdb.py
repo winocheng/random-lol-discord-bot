@@ -12,7 +12,7 @@ def get(key: str):
     value = r.get(key)
     if value is None:
         value = getChampList(key)
-        dayInSec = 60*60*24
+        dayInSec = 60*60*12
         r.set(key, json.dumps(value), ex=dayInSec)
         return value
     

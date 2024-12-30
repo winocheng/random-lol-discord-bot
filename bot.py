@@ -17,13 +17,13 @@ async def randomcomp(ctx): # a slash command will be created with the name "ping
     while not champions or len(set([values[0] for _, values in champions.items()])) != 5:
         for pos in POSITIONS:
             champions[pos] = choice(get(pos))
-
+    
     res = ""
-    res += f"Top: {champions['top'][0]} [{champions['top'][1]}]\n"
-    res += f"Jungle: {champions['jungle'][0]} [{champions['jungle'][1]}]\n"
-    res += f"Mid: {champions['mid'][0]} [{champions['mid'][1]}]\n"
-    res += f"Bot: {champions['adc'][0]} [{champions['adc'][1]}]\n"
-    res += f"Support: {champions['support'][0]} [{champions['support'][1]}]\n"
+    res += f"Top: {champions['top'][0]} {champions['top'][1]}\n"
+    res += f"Jungle: {champions['jungle'][0]} {champions['jungle'][1]}\n"
+    res += f"Mid: {champions['mid'][0]} {champions['mid'][1]}\n"
+    res += f"Bot: {champions['adc'][0]} {champions['adc'][1]}\n"
+    res += f"Support: {champions['support'][0]} {champions['support'][1]}\n"
 
     await ctx.respond(res)
 

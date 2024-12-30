@@ -2,12 +2,12 @@ import requests
 from bs4 import BeautifulSoup
 
 TIER = {
-    '#E84057': 'OP',
-    '#0093FF': '1',
-    '#00BBA3': '2',
-    '#FFB900': '3',
-    '#9AA4AF': '4',
-    '#A88A67': '5'
+    '#E84057': ':regional_indicator_o: :regional_indicator_p:',
+    '#0093FF': ':one:',
+    '#00BBA3': ':two:',
+    '#FFB900': ':three:',
+    '#9AA4AF': ':four:',
+    '#A88A67': ':five:'
 }
 
 
